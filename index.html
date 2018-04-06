@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Country search engine</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Country search engine</h1>
+    <input id="country-name" type="text" />
+    <button id="search">Search</button>
+    <h2>List of countries</h2>
+    <div id="lists"></div>
+    <script id="template-list" type="text/template">
+      <dl id="{{name}}">
+        <dt><img src="{{flag}}" alt="Flag of {{name}}">Country name:</dt>
+        <dd>{{name}}</dd>
+        <dt>Capital:</dt>
+        <dd>{{capital}}</dd>
+        <dt>Region name:</dt>
+        <dd>{{region}}</dd>
+        <dt>Subregion name:</dt>
+        <dd>{{subregion}}</dd>
+        <dt>Population:</dt>
+        <dd>{{population}}</dd>
+        <dt>Area:</dt>
+        <dd>{{area}} km<sup>2</sup></dd>
+        <dt>Alpha 2 Code:</dt>
+        <dd>{{alpha2Code}}</dd>
+      </dl>
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
